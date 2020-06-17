@@ -27,6 +27,7 @@
         width: 100%;
         height:1100px;
         background:#736F6E;
+        flex-wrap: nowrap | wrap | wrap-reverse;
     }
     .header{
         width:100%;
@@ -96,9 +97,11 @@
     <script type="text/babel">
 
       const cont=(<center><div className="text">
-      <h1>Contact</h1>
+      <h1 style={{marginLeft:"0px"}}>Contact</h1>
       <hr className="new"></hr>
-      <h2></h2><br/><br/><br/><br/>
+      <h2></h2><br/><br/>
+      <p>+91 9597860750</p>
+      <p>suganyasugu100896@gmail.com</p><br/><br/>
       <p> 
       <a href="https://twitter.com/suganya10896"><i class="devicon-twitter-plain"></i></a> 
       <a href="https://github.com/Suganya108"><i class="devicon-github-plain"></i></a>
@@ -109,12 +112,13 @@
 
       const menu=(<center><div className="navbar">
             <h1 >Suganya Soundararassou</h1>
+            <div>
             <a href="index.html">ABOUT ME</a>
             <a href="skills.html">SKILLS</a>
             <a href="contact.html">CONTACT</a>
             <a href="education.html">EDUCATION</a>
             <a href="courses.html">CERTIFICATE COURSES</a>
-            <a href="workshop.html">WORKSHOP</a>
+            <a href="workshop.html">WORKSHOP</a></div>
             </div></center>);
       const name=(<h1>Suganya Soundararassou</h1>);
 
