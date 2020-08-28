@@ -20,13 +20,13 @@
     <style>
     .container {
         width: 100%;
-        height:1100px;
+        height:900px;
         background:#736F6E;
     }
     .header{
         width:100%;
-        height:380px;
-        background:#1adb44;
+        height:180px;
+        background:#00FF00;
         margin-left:0px;
     }
     .navbar {
@@ -46,7 +46,7 @@
     }
     .content{
         width:90%;
-        height:60%;
+        height:73%;
         background:#fff;
         margin-top:0px;
         margin-left:5%;
@@ -54,8 +54,10 @@
     }
     .img {
         border-radius: 50%;
-        margin-top:50px;
-        margin-left:570px;
+        margin-left:10%;
+        margin-right:-20%;
+        margin-top:10px;
+        float:left
     }
 
     h1{
@@ -94,25 +96,31 @@
 
       const cont=(<center><div className="text">
       <h1 style={{marginLeft:"0px"}}>Workshop</h1>
-      <hr className="new"></hr><br/><br/>
+      <hr className="new"></hr>
       <p>Workshop on Basic Programming using Python (Offered by FOSSEE project, IIT Bombay)</p>
       <p>GarnishingTalentProgramming(SponsoredbyEatonassociatedwith Confederation of IndianIndustry(CII))</p>
+      <h1 style={{marginLeft:"0px"}}>Project</h1><hr className="new"></hr>
+      <p><a style={{color:"black",textDecoration:"none"}} href="https://suganya108.github.io/Cricket-Game/">Simple Cricket Game</a></p>
+      <p><a style={{color:"black",textDecoration:"none"}} href="https://suganya108.github.io/portfolio/">My Portfolio</a></p>
+      <p>Customer Relationship Management (CRM) system</p>
+      <p>ToDo</p>
+      <p>Tic-Tac-Toe</p>
+      <p>Ticket Management System</p>
       </div></center>);
 
       const menu=(<center><div className="navbar">
+            <img src="profile.png" alt="my-photo" width="270px" height="100px" className="img"/>
             <h1 >Suganya Soundararassou</h1>
+            <div>
             <a href="index.html">ABOUT ME</a>
             <a href="skills.html">SKILLS</a>
             <a href="contact.html">CONTACT</a>
             <a href="education.html">EDUCATION</a>
             <a href="courses.html">CERTIFICATE COURSES</a>
-            <a href="workshop.html">WORKSHOP</a>
-            </div></center>);
-      const name=(<h1>Suganya Soundararassou</h1>);
-
-      const ele =React.createElement("img", { className:"img", alt:"Avatar",src:"profile.png",style:{width:"270px"}},null);
-
-      const element =React.createElement("div", { className:"header"},ele,menu);
+            <a href="workshop.html">WORKSHOP/PROJECT</a></div>
+         </div></center>);
+      
+      const element =React.createElement("div", { className:"header"},menu);
 
       const inelement =React.createElement("div", { className:"content"},cont);
 
