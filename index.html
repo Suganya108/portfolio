@@ -20,14 +20,13 @@
     <style>
     .container {
         width: 100%;
-        height:1100px;
+        height:800px;
         background:#736F6E;
-        flex-wrap: nowrap;
     }
     .header{
         width:100%;
-        height:380px;
-        background:#1adb44;
+        height:180px;
+        background:#00FF00;
         margin-left:0px;
     }
     .navbar {
@@ -47,7 +46,7 @@
     }
     .content{
         width:90%;
-        height:60%;
+        height:70%;
         background:#fff;
         margin-top:0px;
         margin-left:5%;
@@ -55,14 +54,15 @@
     }
     .img {
         border-radius: 50%;
-        margin-top:50px;
-        margin-left:570px;
+        margin-left:10%;
+        margin-right:-20%;
+        margin-top:10px;
+        float:left
     }
 
     h1{
         color:#f76228;
         font-size:45px;
-        margin-left:70px;
     }
     h2{font-size:40px;}
     h5{
@@ -74,8 +74,8 @@
     }
     .text{
         margin:0px;
-        float:left;
         padding:40px;
+        {% comment %} text-align:center; {% endcomment %}
         margin-left:10px;
     }
     p{
@@ -96,32 +96,30 @@
       <h1>About Me</h1>
       <hr className="new"></hr>
       <h2>Suganya</h2>
-      <p><strong>Date of Birth : </strong>10.08.1996</p>
       <p><strong>Nationality : </strong>Indian</p>
-      <p><strong>Father's Name : </strong>Soundararassou.N</p>
+      <p><strong>Date of Birth : </strong>10.08.1996</p>
       <p><strong>Mother's Name : </strong>Sasikala.S</p>
+      <p><strong>Father's Name : </strong>Soundararassou.N</p>
       <p><strong>Languages Known : </strong>English,Tamil(Read,Write &amp; Speak)</p>
       <p><strong>Address : </strong>No:25, North street, Pooranankuppam , Puducherry- 605102.
       </p></div>);
 
       const menu=(<center><div className="navbar">
+      <img src="profile.png" alt="my-photo" width="270px" height="100px" className="img"/>
+
             <h1 >Suganya Soundararassou</h1>
+            <div>
             <a href="index.html">ABOUT ME</a>
             <a href="skills.html">SKILLS</a>
             <a href="contact.html">CONTACT</a>
             <a href="education.html">EDUCATION</a>
             <a href="courses.html">CERTIFICATE COURSES</a>
-            <a href="workshop.html">WORKSHOP</a>
+            <a href="workshop.html">WORKSHOP/PROJECT</a></div>
          </div></center>);
-      const name=(<h1>Suganya Soundararassou</h1>);
 
-      const ele =React.createElement("img", { className:"img", alt:"Avatar",src:"profile.png",style:{width:"270px"}},null);
+      const element =React.createElement("div", { className:"header"},menu);
 
-      const element =React.createElement("div", { className:"header"},ele,menu);
-
-      const ele1 =React.createElement("img", {src:"profile.png",style:{width:"450px",marginTop:"200px"}},null);
-
-      const inelement =React.createElement("div", { className:"content"},cont,ele1);
+      const inelement =React.createElement("div", { className:"content"},cont);
 
       const rootElement =React.createElement("div",{className:"container"},element,inelement);
 
